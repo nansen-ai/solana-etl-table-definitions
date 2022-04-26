@@ -1,0 +1,68 @@
+{
+  "parser": {
+    "idl": {
+      "name": "WithdrawLog",
+      "fields": [
+        {
+          "name": "mangoGroup",
+          "type": "publicKey",
+          "index": false
+        },
+        {
+          "name": "mangoAccount",
+          "type": "publicKey",
+          "index": false
+        },
+        {
+          "name": "owner",
+          "type": "publicKey",
+          "index": false
+        },
+        {
+          "name": "tokenIndex",
+          "type": "u64",
+          "index": false
+        },
+        {
+          "name": "quantity",
+          "type": "u64",
+          "index": false
+        }
+      ]
+    },
+    "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+    "type": "log"
+  },
+  "table": {
+    "schema": [
+      {
+        "description": "",
+        "name": "mangoGroup",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "mangoAccount",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "owner",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "tokenIndex",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "quantity",
+        "type": "STRING"
+      }
+    ],
+    "table_description": "",
+    "table_name": "MangoMarketsV3_log_WithdrawLog",
+    "dataset_name": "mango"
+  }
+}
