@@ -62,7 +62,7 @@
       }
     ],
     "table_description": "",
-    "table_name": "MangoMarketsV3_log_DepositLog",
+    "table_name": "MangoMarketsV3_event_DepositLog",
     "dataset_name": "mango"
   }
 }

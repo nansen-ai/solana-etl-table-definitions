@@ -4,6 +4,14 @@ This repo contains table definitions for Solana.
 
 If you want to parse logs and instructions on Solana and make them cheaper to query on BigQuery, feel free to submit a PR with your new table definitions.
 
+The tables will be available in the `blockchain-etl.solana_{dataset}` dataset, e.g.:
+
+```
+SELECT *
+FROM blockchain-etl.solana_mango.MangoMarketsV3_event_WithdrawLog 
+WHERE date(block_timestamp) = '2022-04-24'
+```
+
 ## How To Submit New Table Definitions
 
 1. Fork this repository
