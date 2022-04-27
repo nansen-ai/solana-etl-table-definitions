@@ -9,7 +9,7 @@ The tables will be available in the `blockchain-etl.solana_{dataset}` dataset, e
 ```
 SELECT *
 FROM blockchain-etl.solana_mango.MangoMarketsV3_event_WithdrawLog 
-WHERE date(block_timestamp) = '2022-04-24'
+WHERE date(block_timestamp) = '2022-04-21'
 ```
 
 ## How To Submit New Table Definitions
