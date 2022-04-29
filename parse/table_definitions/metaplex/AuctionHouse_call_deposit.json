@@ -1,0 +1,94 @@
+{
+    "parser": {
+        "type": "instruction",
+        "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+        "idl": {
+            "name": "deposit",
+            "accounts": [
+                {
+                    "name": "wallet",
+                    "isMut": false,
+                    "isSigner": true
+                },
+                {
+                    "name": "paymentAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "transferAuthority",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "escrowPaymentAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "treasuryMint",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "authority",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouse",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouseFeeAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "tokenProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "rent",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": [
+                {
+                    "name": "escrowPaymentBump",
+                    "type": "u8"
+                },
+                {
+                    "name": "amount",
+                    "type": "u64"
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "metaplex",
+        "table_name": "AuctionHouse_call_deposit",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "escrowPaymentBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "amount",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

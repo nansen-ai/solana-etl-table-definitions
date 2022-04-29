@@ -1,0 +1,127 @@
+{
+    "parser": {
+        "type": "instruction",
+        "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+        "idl": {
+            "name": "buy",
+            "accounts": [
+                {
+                    "name": "wallet",
+                    "isMut": false,
+                    "isSigner": true
+                },
+                {
+                    "name": "paymentAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "transferAuthority",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "treasuryMint",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "tokenAccount",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "metadata",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "escrowPaymentAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "authority",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouse",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouseFeeAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "buyerTradeState",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "tokenProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "rent",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": [
+                {
+                    "name": "tradeStateBump",
+                    "type": "u8"
+                },
+                {
+                    "name": "escrowPaymentBump",
+                    "type": "u8"
+                },
+                {
+                    "name": "buyerPrice",
+                    "type": "u64"
+                },
+                {
+                    "name": "tokenSize",
+                    "type": "u64"
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "metaplex",
+        "table_name": "AuctionHouse_call_buy",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "tradeStateBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "escrowPaymentBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "buyerPrice",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenSize",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

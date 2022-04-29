@@ -1,0 +1,125 @@
+{
+  "parser": {
+    "idl": {
+      "name": "sell",
+      "accounts": [
+        {
+          "name": "wallet",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "metadata",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "auctionHouse",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "auctionHouseFeeAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "sellerTradeState",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "freeSellerTradeState",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "programAsSigner",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "tradeStateBump",
+          "type": "u8"
+        },
+        {
+          "name": "freeTradeStateBump",
+          "type": "u8"
+        },
+        {
+          "name": "programAsSignerBump",
+          "type": "u8"
+        },
+        {
+          "name": "buyerPrice",
+          "type": "u64"
+        },
+        {
+          "name": "tokenSize",
+          "type": "u64"
+        }
+      ]
+    },
+    "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+    "type": "instruction"
+  },
+  "table": {
+    "schema": [
+      {
+        "description": "",
+        "name": "tradeStateBump",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "freeTradeStateBump",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "programAsSignerBump",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "buyerPrice",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "name": "tokenSize",
+        "type": "STRING"
+      }
+    ],
+    "table_description": "",
+    "table_name": "AuctionHouse_call_sell",
+    "dataset_name": "metaplex"
+  }
+}
