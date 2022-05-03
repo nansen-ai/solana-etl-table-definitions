@@ -121,6 +121,83 @@
                 "name": "tokenSize",
                 "description": "",
                 "type": "STRING"
+            },
+            {
+                "name": "accounts",
+                "description": "accounts",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "wallet",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "paymentAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "transferAuthority",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "treasuryMint",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "tokenAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "metadata",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "escrowPaymentAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "authority",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouse",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouseFeeAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "buyerTradeState",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "tokenProgram",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "systemProgram",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "rent",
+                        "description": "",
+                        "type": "STRING"
+                    }
+                ]
             }
         ]
     }

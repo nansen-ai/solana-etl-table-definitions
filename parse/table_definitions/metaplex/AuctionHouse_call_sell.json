@@ -1,125 +1,193 @@
 {
-  "parser": {
-    "idl": {
-      "name": "sell",
-      "accounts": [
-        {
-          "name": "wallet",
-          "isMut": false,
-          "isSigner": false
+    "parser": {
+        "type": "instruction",
+        "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+        "idl": {
+            "name": "sell",
+            "accounts": [
+                {
+                    "name": "wallet",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "tokenAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "metadata",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "authority",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouse",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouseFeeAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "sellerTradeState",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "freeSellerTradeState",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "tokenProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "programAsSigner",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "rent",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": [
+                {
+                    "name": "tradeStateBump",
+                    "type": "u8"
+                },
+                {
+                    "name": "freeTradeStateBump",
+                    "type": "u8"
+                },
+                {
+                    "name": "programAsSignerBump",
+                    "type": "u8"
+                },
+                {
+                    "name": "buyerPrice",
+                    "type": "u64"
+                },
+                {
+                    "name": "tokenSize",
+                    "type": "u64"
+                }
+            ]
         },
-        {
-          "name": "tokenAccount",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "metadata",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "authority",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "auctionHouse",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "auctionHouseFeeAccount",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "sellerTradeState",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "freeSellerTradeState",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "programAsSigner",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "tradeStateBump",
-          "type": "u8"
-        },
-        {
-          "name": "freeTradeStateBump",
-          "type": "u8"
-        },
-        {
-          "name": "programAsSignerBump",
-          "type": "u8"
-        },
-        {
-          "name": "buyerPrice",
-          "type": "u64"
-        },
-        {
-          "name": "tokenSize",
-          "type": "u64"
-        }
-      ]
+        "field_mapping": {}
     },
-    "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
-    "type": "instruction"
-  },
-  "table": {
-    "schema": [
-      {
-        "description": "",
-        "name": "tradeStateBump",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "freeTradeStateBump",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "programAsSignerBump",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "buyerPrice",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "tokenSize",
-        "type": "STRING"
-      }
-    ],
-    "table_description": "",
-    "table_name": "AuctionHouse_call_sell",
-    "dataset_name": "metaplex"
-  }
+    "table": {
+        "dataset_name": "metaplex",
+        "table_name": "AuctionHouse_call_sell",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "tradeStateBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "freeTradeStateBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "programAsSignerBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "buyerPrice",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenSize",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "accounts",
+                "description": "accounts",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "wallet",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "tokenAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "metadata",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "authority",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouse",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouseFeeAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "sellerTradeState",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "freeSellerTradeState",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "tokenProgram",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "systemProgram",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "programAsSigner",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "rent",
+                        "description": "",
+                        "type": "STRING"
+                    }
+                ]
+            }
+        ]
+    }
 }
