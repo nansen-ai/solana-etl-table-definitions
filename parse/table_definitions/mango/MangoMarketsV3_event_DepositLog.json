@@ -1,68 +1,69 @@
 {
-  "parser": {
-    "idl": {
-      "name": "DepositLog",
-      "fields": [
-        {
-          "name": "mangoGroup",
-          "type": "publicKey",
-          "index": false
+    "parser": {
+        "type": "log",
+        "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+        "idl": {
+            "name": "DepositLog",
+            "fields": [
+                {
+                    "name": "mangoGroup",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "mangoAccount",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "owner",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "tokenIndex",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "quantity",
+                    "type": "u64",
+                    "index": false
+                }
+            ]
         },
-        {
-          "name": "mangoAccount",
-          "type": "publicKey",
-          "index": false
-        },
-        {
-          "name": "owner",
-          "type": "publicKey",
-          "index": false
-        },
-        {
-          "name": "tokenIndex",
-          "type": "u64",
-          "index": false
-        },
-        {
-          "name": "quantity",
-          "type": "u64",
-          "index": false
-        }
-      ]
+        "field_mapping": {}
     },
-    "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
-    "type": "log"
-  },
-  "table": {
-    "schema": [
-      {
-        "description": "",
-        "name": "mangoGroup",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "mangoAccount",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "owner",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "tokenIndex",
-        "type": "STRING"
-      },
-      {
-        "description": "",
-        "name": "quantity",
-        "type": "STRING"
-      }
-    ],
-    "table_description": "",
-    "table_name": "MangoMarketsV3_event_DepositLog",
-    "dataset_name": "mango"
-  }
+    "table": {
+        "dataset_name": "mango",
+        "table_name": "MangoMarketsV3_event_DepositLog",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "mangoGroup",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "mangoAccount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "owner",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "tokenIndex",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "quantity",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
 }

@@ -3,20 +3,10 @@
         "type": "log",
         "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
         "idl": {
-            "name": "WithdrawLog",
+            "name": "UpdateRootBankLog",
             "fields": [
                 {
                     "name": "mangoGroup",
-                    "type": "publicKey",
-                    "index": false
-                },
-                {
-                    "name": "mangoAccount",
-                    "type": "publicKey",
-                    "index": false
-                },
-                {
-                    "name": "owner",
                     "type": "publicKey",
                     "index": false
                 },
@@ -26,8 +16,13 @@
                     "index": false
                 },
                 {
-                    "name": "quantity",
-                    "type": "u64",
+                    "name": "depositIndex",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "borrowIndex",
+                    "type": "i128",
                     "index": false
                 }
             ]
@@ -36,21 +31,11 @@
     },
     "table": {
         "dataset_name": "mango",
-        "table_name": "MangoMarketsV3_event_WithdrawLog",
+        "table_name": "MangoMarketsV3_event_UpdateRootBankLog",
         "table_description": "",
         "schema": [
             {
                 "name": "mangoGroup",
-                "description": "",
-                "type": "STRING"
-            },
-            {
-                "name": "mangoAccount",
-                "description": "",
-                "type": "STRING"
-            },
-            {
-                "name": "owner",
                 "description": "",
                 "type": "STRING"
             },
@@ -60,7 +45,12 @@
                 "type": "STRING"
             },
             {
-                "name": "quantity",
+                "name": "depositIndex",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "borrowIndex",
                 "description": "",
                 "type": "STRING"
             }

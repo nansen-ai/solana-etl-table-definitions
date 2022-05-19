@@ -1,0 +1,119 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+        "idl": {
+            "name": "LiquidateTokenAndTokenLog",
+            "fields": [
+                {
+                    "name": "mangoGroup",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "liqee",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "liqor",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "assetIndex",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "liabIndex",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "assetTransfer",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "liabTransfer",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "assetPrice",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "liabPrice",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "bankruptcy",
+                    "type": "bool",
+                    "index": false
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "mango",
+        "table_name": "MangoMarketsV3_event_LiquidateTokenAndTokenLog",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "mangoGroup",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "liqee",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "liqor",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "assetIndex",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "liabIndex",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "assetTransfer",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "liabTransfer",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "assetPrice",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "liabPrice",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "bankruptcy",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

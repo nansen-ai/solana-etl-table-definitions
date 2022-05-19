@@ -1,0 +1,77 @@
+{
+    "parser": {
+        "type": "instruction",
+        "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+        "idl": {
+            "name": "closeEscrowAccount",
+            "accounts": [
+                {
+                    "name": "wallet",
+                    "isMut": false,
+                    "isSigner": true
+                },
+                {
+                    "name": "escrowPaymentAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouse",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": [
+                {
+                    "name": "escrowPaymentBump",
+                    "type": "u8"
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "metaplex",
+        "table_name": "AuctionHouse_call_closeEscrowAccount",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "escrowPaymentBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "accounts",
+                "description": "accounts",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "wallet",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "escrowPaymentAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouse",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "systemProgram",
+                        "description": "",
+                        "type": "STRING"
+                    }
+                ]
+            }
+        ]
+    }
+}

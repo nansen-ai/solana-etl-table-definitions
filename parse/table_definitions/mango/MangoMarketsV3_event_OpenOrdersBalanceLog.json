@@ -3,7 +3,7 @@
         "type": "log",
         "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
         "idl": {
-            "name": "WithdrawLog",
+            "name": "OpenOrdersBalanceLog",
             "fields": [
                 {
                     "name": "mangoGroup",
@@ -16,17 +16,32 @@
                     "index": false
                 },
                 {
-                    "name": "owner",
-                    "type": "publicKey",
-                    "index": false
-                },
-                {
-                    "name": "tokenIndex",
+                    "name": "marketIndex",
                     "type": "u64",
                     "index": false
                 },
                 {
-                    "name": "quantity",
+                    "name": "baseTotal",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "baseFree",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "quoteTotal",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "quoteFree",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "referrerRebatesAccrued",
                     "type": "u64",
                     "index": false
                 }
@@ -36,7 +51,7 @@
     },
     "table": {
         "dataset_name": "mango",
-        "table_name": "MangoMarketsV3_event_WithdrawLog",
+        "table_name": "MangoMarketsV3_event_OpenOrdersBalanceLog",
         "table_description": "",
         "schema": [
             {
@@ -50,17 +65,32 @@
                 "type": "STRING"
             },
             {
-                "name": "owner",
+                "name": "marketIndex",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "tokenIndex",
+                "name": "baseTotal",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "quantity",
+                "name": "baseFree",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "quoteTotal",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "quoteFree",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "referrerRebatesAccrued",
                 "description": "",
                 "type": "STRING"
             }

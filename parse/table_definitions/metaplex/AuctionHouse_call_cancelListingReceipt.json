@@ -1,0 +1,57 @@
+{
+    "parser": {
+        "type": "instruction",
+        "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+        "idl": {
+            "name": "cancelListingReceipt",
+            "accounts": [
+                {
+                    "name": "receipt",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "instruction",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": []
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "metaplex",
+        "table_name": "AuctionHouse_call_cancelListingReceipt",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "accounts",
+                "description": "accounts",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "receipt",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "systemProgram",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "instruction",
+                        "description": "",
+                        "type": "STRING"
+                    }
+                ]
+            }
+        ]
+    }
+}

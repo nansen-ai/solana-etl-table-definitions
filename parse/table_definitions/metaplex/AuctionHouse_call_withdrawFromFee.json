@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "type": "instruction",
+        "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+        "idl": {
+            "name": "withdrawFromFee",
+            "accounts": [
+                {
+                    "name": "authority",
+                    "isMut": false,
+                    "isSigner": true
+                },
+                {
+                    "name": "feeWithdrawalDestination",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouseFeeAccount",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouse",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": [
+                {
+                    "name": "amount",
+                    "type": "u64"
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "metaplex",
+        "table_name": "AuctionHouse_call_withdrawFromFee",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "amount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "accounts",
+                "description": "accounts",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "authority",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "feeWithdrawalDestination",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouseFeeAccount",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouse",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "systemProgram",
+                        "description": "",
+                        "type": "STRING"
+                    }
+                ]
+            }
+        ]
+    }
+}

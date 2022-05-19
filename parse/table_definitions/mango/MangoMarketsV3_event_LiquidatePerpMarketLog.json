@@ -3,7 +3,7 @@
         "type": "log",
         "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
         "idl": {
-            "name": "WithdrawLog",
+            "name": "LiquidatePerpMarketLog",
             "fields": [
                 {
                     "name": "mangoGroup",
@@ -11,23 +11,38 @@
                     "index": false
                 },
                 {
-                    "name": "mangoAccount",
+                    "name": "liqee",
                     "type": "publicKey",
                     "index": false
                 },
                 {
-                    "name": "owner",
+                    "name": "liqor",
                     "type": "publicKey",
                     "index": false
                 },
                 {
-                    "name": "tokenIndex",
+                    "name": "marketIndex",
                     "type": "u64",
                     "index": false
                 },
                 {
-                    "name": "quantity",
-                    "type": "u64",
+                    "name": "price",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "baseTransfer",
+                    "type": "i64",
+                    "index": false
+                },
+                {
+                    "name": "quoteTransfer",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "bankruptcy",
+                    "type": "bool",
                     "index": false
                 }
             ]
@@ -36,7 +51,7 @@
     },
     "table": {
         "dataset_name": "mango",
-        "table_name": "MangoMarketsV3_event_WithdrawLog",
+        "table_name": "MangoMarketsV3_event_LiquidatePerpMarketLog",
         "table_description": "",
         "schema": [
             {
@@ -45,22 +60,37 @@
                 "type": "STRING"
             },
             {
-                "name": "mangoAccount",
+                "name": "liqee",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "owner",
+                "name": "liqor",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "tokenIndex",
+                "name": "marketIndex",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "quantity",
+                "name": "price",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "baseTransfer",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "quoteTransfer",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "bankruptcy",
                 "description": "",
                 "type": "STRING"
             }

@@ -1,0 +1,109 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+        "idl": {
+            "name": "PerpBalanceLog",
+            "fields": [
+                {
+                    "name": "mangoGroup",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "mangoAccount",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "marketIndex",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "basePosition",
+                    "type": "i64",
+                    "index": false
+                },
+                {
+                    "name": "quotePosition",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "longSettledFunding",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "shortSettledFunding",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "longFunding",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "shortFunding",
+                    "type": "i128",
+                    "index": false
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "mango",
+        "table_name": "MangoMarketsV3_event_PerpBalanceLog",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "mangoGroup",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "mangoAccount",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "marketIndex",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "basePosition",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "quotePosition",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "longSettledFunding",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "shortSettledFunding",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "longFunding",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "shortFunding",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

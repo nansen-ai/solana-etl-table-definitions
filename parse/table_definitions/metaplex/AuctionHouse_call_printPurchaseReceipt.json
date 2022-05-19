@@ -3,47 +3,27 @@
         "type": "instruction",
         "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
         "idl": {
-            "name": "withdraw",
+            "name": "printPurchaseReceipt",
             "accounts": [
                 {
-                    "name": "wallet",
-                    "isMut": false,
-                    "isSigner": false
-                },
-                {
-                    "name": "receiptAccount",
+                    "name": "purchaseReceipt",
                     "isMut": true,
                     "isSigner": false
                 },
                 {
-                    "name": "escrowPaymentAccount",
+                    "name": "listingReceipt",
                     "isMut": true,
                     "isSigner": false
                 },
                 {
-                    "name": "treasuryMint",
-                    "isMut": false,
-                    "isSigner": false
-                },
-                {
-                    "name": "authority",
-                    "isMut": false,
-                    "isSigner": false
-                },
-                {
-                    "name": "auctionHouse",
-                    "isMut": false,
-                    "isSigner": false
-                },
-                {
-                    "name": "auctionHouseFeeAccount",
+                    "name": "bidReceipt",
                     "isMut": true,
                     "isSigner": false
                 },
                 {
-                    "name": "tokenProgram",
-                    "isMut": false,
-                    "isSigner": false
+                    "name": "bookkeeper",
+                    "isMut": true,
+                    "isSigner": true
                 },
                 {
                     "name": "systemProgram",
@@ -51,24 +31,20 @@
                     "isSigner": false
                 },
                 {
-                    "name": "ataProgram",
+                    "name": "rent",
                     "isMut": false,
                     "isSigner": false
                 },
                 {
-                    "name": "rent",
+                    "name": "instruction",
                     "isMut": false,
                     "isSigner": false
                 }
             ],
             "args": [
                 {
-                    "name": "escrowPaymentBump",
+                    "name": "purchaseReceiptBump",
                     "type": "u8"
-                },
-                {
-                    "name": "amount",
-                    "type": "u64"
                 }
             ]
         },
@@ -76,16 +52,11 @@
     },
     "table": {
         "dataset_name": "metaplex",
-        "table_name": "AuctionHouse_call_withdraw",
+        "table_name": "AuctionHouse_call_printPurchaseReceipt",
         "table_description": "",
         "schema": [
             {
-                "name": "escrowPaymentBump",
-                "description": "",
-                "type": "STRING"
-            },
-            {
-                "name": "amount",
+                "name": "purchaseReceiptBump",
                 "description": "",
                 "type": "STRING"
             },
@@ -95,42 +66,22 @@
                 "type": "RECORD",
                 "fields": [
                     {
-                        "name": "wallet",
+                        "name": "purchaseReceipt",
                         "description": "",
                         "type": "STRING"
                     },
                     {
-                        "name": "receiptAccount",
+                        "name": "listingReceipt",
                         "description": "",
                         "type": "STRING"
                     },
                     {
-                        "name": "escrowPaymentAccount",
+                        "name": "bidReceipt",
                         "description": "",
                         "type": "STRING"
                     },
                     {
-                        "name": "treasuryMint",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "authority",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "auctionHouse",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "auctionHouseFeeAccount",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "tokenProgram",
+                        "name": "bookkeeper",
                         "description": "",
                         "type": "STRING"
                     },
@@ -140,12 +91,12 @@
                         "type": "STRING"
                     },
                     {
-                        "name": "ataProgram",
+                        "name": "rent",
                         "description": "",
                         "type": "STRING"
                     },
                     {
-                        "name": "rent",
+                        "name": "instruction",
                         "description": "",
                         "type": "STRING"
                     }

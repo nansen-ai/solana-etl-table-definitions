@@ -1,0 +1,87 @@
+{
+    "parser": {
+        "type": "instruction",
+        "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
+        "idl": {
+            "name": "printListingReceipt",
+            "accounts": [
+                {
+                    "name": "receipt",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "bookkeeper",
+                    "isMut": true,
+                    "isSigner": true
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "rent",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "instruction",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": [
+                {
+                    "name": "receiptBump",
+                    "type": "u8"
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "metaplex",
+        "table_name": "AuctionHouse_call_printListingReceipt",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "receiptBump",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "accounts",
+                "description": "accounts",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "receipt",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "bookkeeper",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "systemProgram",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "rent",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "instruction",
+                        "description": "",
+                        "type": "STRING"
+                    }
+                ]
+            }
+        ]
+    }
+}

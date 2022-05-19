@@ -1,0 +1,209 @@
+{
+    "parser": {
+        "type": "log",
+        "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+        "idl": {
+            "name": "FillLog",
+            "fields": [
+                {
+                    "name": "mangoGroup",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "marketIndex",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "takerSide",
+                    "type": "u8",
+                    "index": false
+                },
+                {
+                    "name": "makerSlot",
+                    "type": "u8",
+                    "index": false
+                },
+                {
+                    "name": "makerOut",
+                    "type": "bool",
+                    "index": false
+                },
+                {
+                    "name": "timestamp",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "seqNum",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "maker",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "makerOrderId",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "makerClientOrderId",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "makerFee",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "bestInitial",
+                    "type": "i64",
+                    "index": false
+                },
+                {
+                    "name": "makerTimestamp",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "taker",
+                    "type": "publicKey",
+                    "index": false
+                },
+                {
+                    "name": "takerOrderId",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "takerClientOrderId",
+                    "type": "u64",
+                    "index": false
+                },
+                {
+                    "name": "takerFee",
+                    "type": "i128",
+                    "index": false
+                },
+                {
+                    "name": "price",
+                    "type": "i64",
+                    "index": false
+                },
+                {
+                    "name": "quantity",
+                    "type": "i64",
+                    "index": false
+                }
+            ]
+        },
+        "field_mapping": {}
+    },
+    "table": {
+        "dataset_name": "mango",
+        "table_name": "MangoMarketsV3_event_FillLog",
+        "table_description": "",
+        "schema": [
+            {
+                "name": "mangoGroup",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "marketIndex",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "takerSide",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "makerSlot",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "makerOut",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "timestamp",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "seqNum",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "maker",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "makerOrderId",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "makerClientOrderId",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "makerFee",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "bestInitial",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "makerTimestamp",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "taker",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "takerOrderId",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "takerClientOrderId",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "takerFee",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "price",
+                "description": "",
+                "type": "STRING"
+            },
+            {
+                "name": "quantity",
+                "description": "",
+                "type": "STRING"
+            }
+        ]
+    }
+}

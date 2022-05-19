@@ -3,7 +3,7 @@
         "type": "log",
         "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
         "idl": {
-            "name": "WithdrawLog",
+            "name": "CachePricesLog",
             "fields": [
                 {
                     "name": "mangoGroup",
@@ -11,23 +11,17 @@
                     "index": false
                 },
                 {
-                    "name": "mangoAccount",
-                    "type": "publicKey",
+                    "name": "oracleIndexes",
+                    "type": {
+                        "vec": "u64"
+                    },
                     "index": false
                 },
                 {
-                    "name": "owner",
-                    "type": "publicKey",
-                    "index": false
-                },
-                {
-                    "name": "tokenIndex",
-                    "type": "u64",
-                    "index": false
-                },
-                {
-                    "name": "quantity",
-                    "type": "u64",
+                    "name": "oraclePrices",
+                    "type": {
+                        "vec": "i128"
+                    },
                     "index": false
                 }
             ]
@@ -36,7 +30,7 @@
     },
     "table": {
         "dataset_name": "mango",
-        "table_name": "MangoMarketsV3_event_WithdrawLog",
+        "table_name": "MangoMarketsV3_event_CachePricesLog",
         "table_description": "",
         "schema": [
             {
@@ -45,22 +39,12 @@
                 "type": "STRING"
             },
             {
-                "name": "mangoAccount",
+                "name": "oracleIndexes",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "owner",
-                "description": "",
-                "type": "STRING"
-            },
-            {
-                "name": "tokenIndex",
-                "description": "",
-                "type": "STRING"
-            },
-            {
-                "name": "quantity",
+                "name": "oraclePrices",
                 "description": "",
                 "type": "STRING"
             }

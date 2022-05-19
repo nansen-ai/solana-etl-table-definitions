@@ -3,23 +3,8 @@
         "type": "instruction",
         "contract_address": "hausS13jsjafwWwGqZTUQRmWyvyxn9EQpqMwV1PBBmk",
         "idl": {
-            "name": "withdraw",
+            "name": "withdrawFromTreasury",
             "accounts": [
-                {
-                    "name": "wallet",
-                    "isMut": false,
-                    "isSigner": false
-                },
-                {
-                    "name": "receiptAccount",
-                    "isMut": true,
-                    "isSigner": false
-                },
-                {
-                    "name": "escrowPaymentAccount",
-                    "isMut": true,
-                    "isSigner": false
-                },
                 {
                     "name": "treasuryMint",
                     "isMut": false,
@@ -28,15 +13,20 @@
                 {
                     "name": "authority",
                     "isMut": false,
+                    "isSigner": true
+                },
+                {
+                    "name": "treasuryWithdrawalDestination",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "auctionHouseTreasury",
+                    "isMut": true,
                     "isSigner": false
                 },
                 {
                     "name": "auctionHouse",
-                    "isMut": false,
-                    "isSigner": false
-                },
-                {
-                    "name": "auctionHouseFeeAccount",
                     "isMut": true,
                     "isSigner": false
                 },
@@ -49,23 +39,9 @@
                     "name": "systemProgram",
                     "isMut": false,
                     "isSigner": false
-                },
-                {
-                    "name": "ataProgram",
-                    "isMut": false,
-                    "isSigner": false
-                },
-                {
-                    "name": "rent",
-                    "isMut": false,
-                    "isSigner": false
                 }
             ],
             "args": [
-                {
-                    "name": "escrowPaymentBump",
-                    "type": "u8"
-                },
                 {
                     "name": "amount",
                     "type": "u64"
@@ -76,14 +52,9 @@
     },
     "table": {
         "dataset_name": "metaplex",
-        "table_name": "AuctionHouse_call_withdraw",
+        "table_name": "AuctionHouse_call_withdrawFromTreasury",
         "table_description": "",
         "schema": [
-            {
-                "name": "escrowPaymentBump",
-                "description": "",
-                "type": "STRING"
-            },
             {
                 "name": "amount",
                 "description": "",
@@ -95,21 +66,6 @@
                 "type": "RECORD",
                 "fields": [
                     {
-                        "name": "wallet",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "receiptAccount",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "escrowPaymentAccount",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
                         "name": "treasuryMint",
                         "description": "",
                         "type": "STRING"
@@ -120,12 +76,17 @@
                         "type": "STRING"
                     },
                     {
-                        "name": "auctionHouse",
+                        "name": "treasuryWithdrawalDestination",
                         "description": "",
                         "type": "STRING"
                     },
                     {
-                        "name": "auctionHouseFeeAccount",
+                        "name": "auctionHouseTreasury",
+                        "description": "",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "auctionHouse",
                         "description": "",
                         "type": "STRING"
                     },
@@ -136,16 +97,6 @@
                     },
                     {
                         "name": "systemProgram",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "ataProgram",
-                        "description": "",
-                        "type": "STRING"
-                    },
-                    {
-                        "name": "rent",
                         "description": "",
                         "type": "STRING"
                     }

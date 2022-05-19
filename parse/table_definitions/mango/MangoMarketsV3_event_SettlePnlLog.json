@@ -3,7 +3,7 @@
         "type": "log",
         "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
         "idl": {
-            "name": "WithdrawLog",
+            "name": "SettlePnlLog",
             "fields": [
                 {
                     "name": "mangoGroup",
@@ -11,23 +11,23 @@
                     "index": false
                 },
                 {
-                    "name": "mangoAccount",
+                    "name": "mangoAccountA",
                     "type": "publicKey",
                     "index": false
                 },
                 {
-                    "name": "owner",
+                    "name": "mangoAccountB",
                     "type": "publicKey",
                     "index": false
                 },
                 {
-                    "name": "tokenIndex",
+                    "name": "marketIndex",
                     "type": "u64",
                     "index": false
                 },
                 {
-                    "name": "quantity",
-                    "type": "u64",
+                    "name": "settlement",
+                    "type": "i128",
                     "index": false
                 }
             ]
@@ -36,7 +36,7 @@
     },
     "table": {
         "dataset_name": "mango",
-        "table_name": "MangoMarketsV3_event_WithdrawLog",
+        "table_name": "MangoMarketsV3_event_SettlePnlLog",
         "table_description": "",
         "schema": [
             {
@@ -45,22 +45,22 @@
                 "type": "STRING"
             },
             {
-                "name": "mangoAccount",
+                "name": "mangoAccountA",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "owner",
+                "name": "mangoAccountB",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "tokenIndex",
+                "name": "marketIndex",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "quantity",
+                "name": "settlement",
                 "description": "",
                 "type": "STRING"
             }

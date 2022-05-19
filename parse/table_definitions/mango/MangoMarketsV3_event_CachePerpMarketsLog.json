@@ -3,7 +3,7 @@
         "type": "log",
         "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
         "idl": {
-            "name": "WithdrawLog",
+            "name": "CachePerpMarketsLog",
             "fields": [
                 {
                     "name": "mangoGroup",
@@ -11,23 +11,24 @@
                     "index": false
                 },
                 {
-                    "name": "mangoAccount",
-                    "type": "publicKey",
+                    "name": "marketIndexes",
+                    "type": {
+                        "vec": "u64"
+                    },
                     "index": false
                 },
                 {
-                    "name": "owner",
-                    "type": "publicKey",
+                    "name": "longFundings",
+                    "type": {
+                        "vec": "i128"
+                    },
                     "index": false
                 },
                 {
-                    "name": "tokenIndex",
-                    "type": "u64",
-                    "index": false
-                },
-                {
-                    "name": "quantity",
-                    "type": "u64",
+                    "name": "shortFundings",
+                    "type": {
+                        "vec": "i128"
+                    },
                     "index": false
                 }
             ]
@@ -36,7 +37,7 @@
     },
     "table": {
         "dataset_name": "mango",
-        "table_name": "MangoMarketsV3_event_WithdrawLog",
+        "table_name": "MangoMarketsV3_event_CachePerpMarketsLog",
         "table_description": "",
         "schema": [
             {
@@ -45,22 +46,17 @@
                 "type": "STRING"
             },
             {
-                "name": "mangoAccount",
+                "name": "marketIndexes",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "owner",
+                "name": "longFundings",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "tokenIndex",
-                "description": "",
-                "type": "STRING"
-            },
-            {
-                "name": "quantity",
+                "name": "shortFundings",
                 "description": "",
                 "type": "STRING"
             }

@@ -3,7 +3,7 @@
         "type": "log",
         "contract_address": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
         "idl": {
-            "name": "WithdrawLog",
+            "name": "ReferralFeeAccrualLog",
             "fields": [
                 {
                     "name": "mangoGroup",
@@ -11,23 +11,23 @@
                     "index": false
                 },
                 {
-                    "name": "mangoAccount",
+                    "name": "referrerMangoAccount",
                     "type": "publicKey",
                     "index": false
                 },
                 {
-                    "name": "owner",
+                    "name": "referreeMangoAccount",
                     "type": "publicKey",
                     "index": false
                 },
                 {
-                    "name": "tokenIndex",
+                    "name": "marketIndex",
                     "type": "u64",
                     "index": false
                 },
                 {
-                    "name": "quantity",
-                    "type": "u64",
+                    "name": "referralFeeAccrual",
+                    "type": "i128",
                     "index": false
                 }
             ]
@@ -36,7 +36,7 @@
     },
     "table": {
         "dataset_name": "mango",
-        "table_name": "MangoMarketsV3_event_WithdrawLog",
+        "table_name": "MangoMarketsV3_event_ReferralFeeAccrualLog",
         "table_description": "",
         "schema": [
             {
@@ -45,22 +45,22 @@
                 "type": "STRING"
             },
             {
-                "name": "mangoAccount",
+                "name": "referrerMangoAccount",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "owner",
+                "name": "referreeMangoAccount",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "tokenIndex",
+                "name": "marketIndex",
                 "description": "",
                 "type": "STRING"
             },
             {
-                "name": "quantity",
+                "name": "referralFeeAccrual",
                 "description": "",
                 "type": "STRING"
             }
